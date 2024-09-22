@@ -1,0 +1,53 @@
+.container-hero{
+    background-image: url('/src/assets/Hero\ Section.svg');
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-principal{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+}
+.container-image{
+    order: 1;
+}
+.container-image img{
+    width: 500px;
+}
+.container-text{
+    width: 50%;
+    text-align: left;
+    padding-right: 50px;
+}
+.container-text h1{
+    font-size: 50px;
+    color: #dcdcdc;
+    line-height: 1.2;
+}
+.container-text div{
+    /*padding: 10px;*/
+}
+.container-text p{
+    color: #bdbdbd;
+    line-height: 1.4;
+    font-size: 24px;
+    margin-top: 2rem;
+}
+.span-hero-section{
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #FF6B35;
+}
