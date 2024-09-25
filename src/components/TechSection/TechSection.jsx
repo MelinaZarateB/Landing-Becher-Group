@@ -1,10 +1,12 @@
-import './TechSection.css';
+import "./TechSection.css";
 
 const TechSection = () => {
-    return(
-        <section>
+  return (
+  <section>
+    
 
-        </section>
-    )
-}
+  </section>
+
+  )
+};
 export default TechSection;

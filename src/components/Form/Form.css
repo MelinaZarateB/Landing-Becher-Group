@@ -1,0 +1,55 @@
+.container-form{
+    background-image: url('/src/assets/Frame\ 144\ copy.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dcdcdc;
+}
+.titles-form{
+    text-align: center;
+    /* display: flex; */
+    margin-bottom: 4rem;
+}
+.titles-form h2{
+    font-size: 42px;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.titles-form h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #FF6B35;
+    line-height: 1.3em;
+    font-weight: 700;
+}
+.container-child-form{
+    padding: 0 8rem;
+    width: 100%;
+}
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+.container-inputs input{
+    background-color: inherit;
+    display: block;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #dcdcdc;
+    outline: none;
+    width: 100%;
+    color: #ffffff; /* Cambiar el color del texto a blanco o un tono claro */
+    caret-color: #ffffff; /* Esto cambiará el color del cursor */
+    line-height: 1.5; 
+}

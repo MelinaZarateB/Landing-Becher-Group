@@ -1,7 +1,9 @@
 .container-hero{
-    background-image: url('/src/assets/Hero\ Section.svg');
-    background-repeat: repeat;
+    background-image: url('/src/assets/Fintech\ Landingpage\ Concept\ \(Community\).svg');
+    background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -34,6 +36,7 @@
     font-size: 50px;
     color: #dcdcdc;
     line-height: 1.2;
+    
 }
 .container-text div{
     /*padding: 10px;*/
@@ -50,4 +53,82 @@
     font-weight: 700;
     line-height: 1.4;
     color: #FF6B35;
+    animation: fadeLeft linear both;
+    animation-duration: 2s;
 }
+/* General fadeIn animation */
+/* Animación de fadeIn */
+.animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-timing-function: ease;
+}
+
+/* Keyframes para fadeIn */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+.fadeLeft {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeLeft;
+    animation-name: fadeLeft;
+}
+
+/* Keyframes para fadeLeft */
+@-webkit-keyframes fadeLeft {
+    from {
+        opacity: 0;
+        /* Cambia -100% a -30% o el valor que prefieras */
+        -webkit-transform: translate3d(-30%, 0, 0);
+        transform: translate3d(-30%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        /* Cambia -100% a -30% o el valor que prefieras */
+        -webkit-transform: translate3d(-15%, 0, 0);
+        transform: translate3d(-15%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);}
