@@ -43,5 +43,13 @@
 }
 .container-links-navbar span{
     cursor: pointer;
+    color: #FF6B35;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
-
+.container-links-navbar span:hover{
+    color: #dcdcdc;
+    filter: drop-shadow(3px 3px 4px rgba(243, 236, 236, 0.3));
+  
+      
+}

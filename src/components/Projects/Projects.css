@@ -1,0 +1,118 @@
+.container-projects{
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+}
+.container-titles-project{
+    text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.h2-projects{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.h3-projects{
+    line-height: 1.8em;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.presentation-project{
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+.container-text-projects{
+    display: flex;
+    gap: 50px
+}
+.container-img-project{
+    max-width: 600px;
+}
+.container-img-project img{
+    width: 100%;
+}
+.title-project{
+    text-transform: uppercase;
+    line-height: 1.5em !important;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 3%;
+}
+.description-project{
+    line-height: 1.8em;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-project{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 3px solid grey;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    float: right;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    color: grey;
+    max-width: 200px;
+}
+.btn-project:hover{
+    border: 3px solid #FF6B35;
+    color: #FF6B35;
+}
+.animate-fade-right {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeRight;
+    animation-name: fadeRight;
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(30%, 0, 0);
+        -webkit-transform: translate3d(30%, 0, 0);
+
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(30%, 0, 0);
+        -webkit-transform: translate3d(30%, 0, 0);
+
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
