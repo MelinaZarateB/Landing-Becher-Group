@@ -26,7 +26,7 @@
 }
 .container-image img{
     width: 500px;
-    filter: drop-shadow(2px 4px 6px #dcdcdc)
+    filter: drop-shadow(2px 4px 6px #FF6B35)
 }
 .container-text{
     width: 50%;
@@ -84,7 +84,7 @@
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px) scale(0.7);
+        transform: translateY(15px) scale(0.7);
     }
     to {
         opacity: 1;
@@ -105,20 +105,7 @@
 /* Keyframes para fadeLeft */
 @-webkit-keyframes fadeLeft {
     from {
-        opacity: 0;
-        /* Cambia -100% a -30% o el valor que prefieras */
-        -webkit-transform: translate3d(-30%, 0, 0);
-        transform: translate3d(-30%, 0, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@keyframes fadeLeft {
-    from {
+        visibility: visible;
         opacity: 0;
         /* Cambia -100% a -30% o el valor que prefieras */
         -webkit-transform: translate3d(-15%, 0, 0);
@@ -130,6 +117,18 @@
         transform: none;
     }
 }
-[data-aos^=fade][data-aos^=fade].aos-animate {
-    opacity: 1;
-    transform: translateZ(0);}
+
+@keyframes fadeLeft {
+    from {
+        visibility: visible;
+        opacity: 0;
+        /* Cambia -100% a -30% o el valor que prefieras */
+        -webkit-transform: translate3d(-15%, 0, 0);
+        transform: translate3d(-15%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}

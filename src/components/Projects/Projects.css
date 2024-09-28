@@ -40,9 +40,13 @@
 }
 .container-img-project{
     max-width: 600px;
+     visibility: hidden; /* El elemento no es visible, pero ocupa su espacio */
 }
 .container-img-project img{
     width: 100%;
+}
+.container-description-titles-project{
+    visibility: hidden;
 }
 .title-project{
     text-transform: uppercase;
@@ -87,16 +91,36 @@
     -webkit-animation-name: fadeRight;
     animation-name: fadeRight;
     animation-timing-function: ease;
+    visibility: visible;
 }
-
+.animate-fade-up{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+    animation-timing-function: ease;
+}
+.animate-fade-down{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeDown;
+    animation-name: fadeDown;
+    animation-timing-function: ease;
+}
 @-webkit-keyframes fadeRight {
     from {
+        visibility: visible;
         opacity: 0;
-        transform: translate3d(30%, 0, 0);
-        -webkit-transform: translate3d(30%, 0, 0);
+        transform: translate3d(15%, 0, 0);
+        -webkit-transform: translate3d(15%, 0, 0);
 
     }
     to {
+        visibility: visible;
         opacity: 1;
         transform: none;
         -webkit-transform: none;
@@ -105,14 +129,117 @@
 
 @keyframes fadeRight {
     from {
+        visibility: visible;
         opacity: 0;
-        transform: translate3d(30%, 0, 0);
-        -webkit-transform: translate3d(30%, 0, 0);
+        transform: translate3d(15%, 0, 0);
+        -webkit-transform: translate3d(15%, 0, 0);
 
     }
     to {
+        visibility: visible;
         opacity: 1;
         transform: none;
         -webkit-transform: none;
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    from {
+        visibility: visible;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 15%, 0);
+        transform: translate3d(0, 15%, 0);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        visibility: visible;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 15%, 0);
+        transform: translate3d(0, 15%, 0);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes fadeDown {
+    from {
+        visibility: visible;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -15%, 0);
+        transform: translate3d(0, -15%, 0);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        visibility: visible;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -15%, 0);
+        transform: translate3d(0, -15%, 0);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.animation-fade-left {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeLeft;
+    animation-name: fadeLeft;
+}
+
+/* Keyframes para fadeLeft */
+@-webkit-keyframes fadeLeft {
+    from {
+        visibility: visible;
+        opacity: 0;
+        /* Cambia -100% a -30% o el valor que prefieras */
+        -webkit-transform: translate3d(-15%, 0, 0);
+        transform: translate3d(-15%, 0, 0);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        visibility: visible;
+        opacity: 0;
+        /* Cambia -100% a -30% o el valor que prefieras */
+        -webkit-transform: translate3d(-15%, 0, 0);
+        transform: translate3d(-15%, 0, 0);
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
 }

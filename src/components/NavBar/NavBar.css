@@ -1,13 +1,50 @@
 .container-navbar{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 22;
-    transition: .3s;
-    transition: .5s;
-    -webkit-transition: .5s;
     height: auto;
+    background-color: transparent;
+    animation: enhance-nav linear 0.2s both;
+    -webkit-animation: enhance-nav linear 0.2s both;
+    -webkit-timeline: scroll(root);
+    -webkit-rannge: 0 30px;
+    animation-timeline: scroll(root);
+    animation-range: 0 30px;
+}
+@keyframes enhance-nav {
+    to{
+        background-color: rgba(18, 13, 49);
+       /* backdrop-filter: blur(5px);*/
+        height: 100px;
+    }
+}
+@-webkit-keyframes enhance-nav{
+    to{
+        background-color: rgba(18, 13, 49);
+       /* backdrop-filter: blur(5px);*/
+        height: 150px;
+    }
+}
+.hero-navbar-scrolled{
+    width: 100%;
+    height: 100px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    .container-logo img{
+        width: 100px;
+
+    }
 }
 .hero-navbar{
     width: 100%;
@@ -23,18 +60,16 @@
     color: white;
     font-weight: 500;
     font-size: 1.2rem;
+    transition: all 0.2s;
 
 }
-.container-logo {
-
-}
-
 .container-logo img {
     width: 130px; /* Ajusta el tamaño del contenedor */
     height: 49px;
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: contain; /* Asegura que la imagen se ajuste correctamente dentro del contenedor */
     padding: 0;
+    transition: all .2s;
 }
 
 .container-links-navbar{

@@ -15,7 +15,7 @@ function useNearScreen(elementRef) {
       }
     };
     const observer = new IntersectionObserver(onChange, {
-      rootMargin: "-30px",
+      threshold: 0.5
     });
 
     if (elementRef.current) {

@@ -24,6 +24,8 @@
     line-height: 1.3em;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
 }
 .titles-form h3{
     text-transform: uppercase;
@@ -31,11 +33,19 @@
     color: #FF6B35;
     line-height: 1.3em;
     font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+.titles-form p {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 .container-child-form{
     /*padding: 0 2rem;*/
     width: 100%;
     max-width: 800px; /* Asegura que el form no se salga de los límites */
+    visibility: hidden;
 }
 .container-form-inputs{
     max-width: 100%; /* Se ajusta al 100% del padre */

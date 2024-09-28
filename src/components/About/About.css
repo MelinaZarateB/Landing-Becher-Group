@@ -32,6 +32,7 @@
     text-align: center;
     gap: 15px;
     box-shadow: 0px 10px 30px 0px rgba(59, 55, 181, 0.3);
+    visibility: hidden;
 }
 .card-grid p{
     font-size: 13px;
@@ -48,10 +49,12 @@
 
 @-webkit-keyframes fadeIn {
     from {
+        visibility: visible;
         opacity: 0;
         transform: translateY(30px) scale(0.7);
     }
     to {
+        visibility: visible;
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
@@ -59,10 +62,12 @@
 
 @keyframes fadeIn {
     from {
+        visibility: visible;
         opacity: 0;
         transform: translateY(30px) scale(0.7);
     }
     to {
+        visibility: visible;
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
