@@ -7,7 +7,7 @@ const Form = () => {
   const show = useNearScreen(elementRef)
   return (
     <section className="container-form">
-      <div className={`container-child-form  ${show ? 'animate' : ''}`} ref={elementRef}>
+      <div className={`container-child-form  ${show ? 'animate' : ''}`} ref={elementRef} id="contact">
         <div className="titles-form" >
           <h2>Estamos para ayudarte</h2>
           <h3>Contactanos</h3>

@@ -37,7 +37,7 @@ const Projects = () => {
   
   return (
     <section className="container-projects">
-      <div className="container-titles-project" style={{ gap: "0px" }}>
+      <div className="container-titles-project" style={{ gap: "0px" }} id="projects">
         <h2 className="h2-projects">Empresas y proyectos</h2>
         <h3 className="h3-projects">Proyectos desarrollados y empresas pertenecientes a Becher Group</h3>
       </div>

@@ -11,12 +11,13 @@ const HeroSection = () => {
         <div className="container-text">
             <div >
               <div className="fadeLeft">
-                <span className="span-hero-section ">Becher Group Solutions</span> 
+                <span className="span-hero-section ">Becher Group</span> 
               </div>
-                <h1 className="fadeLeft">Transformamos tus ideas en soluciones digitales innovadoras</h1>
+                <h1 className="fadeLeft">Innovación y Diversidad Empresarial</h1>
                 <p className="fadeLeft">
-                    Diseño, desarrollo y mantenimiento de software personalizado para
-                    empresas de todos los tamaños
+                Christian y Matias Becher, hermanos fundadores, lideran un grupo empresarial que abarca múltiples sectores. 
+                <br />
+                Explora nuestras áreas de negocio y descubre cómo integramos tecnología, eficiencia y calidad en todo lo que hacemos.
                 </p>
             </div>
         </div>
