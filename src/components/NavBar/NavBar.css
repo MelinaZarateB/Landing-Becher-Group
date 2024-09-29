@@ -41,9 +41,9 @@
     color: white;
     font-weight: 500;
     font-size: 1.1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     .container-logo img{
         width: 100px;
-
     }
 }
 .hero-navbar{

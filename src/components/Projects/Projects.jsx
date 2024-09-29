@@ -2,6 +2,7 @@ import "./Projects.css";
 import imgAdminiad from "./../../assets/Adminiad.svg";
 import imgCDA from "./../../assets/CDA.svg";
 import imgCombustibles from "./../../assets/Combustibles.svg";
+import imgPuntosBe from './../../assets/Puntosbe.svg';
 import { useRef } from "react";
 import useNearScreen from "../../utils/useNearScreen";
 
@@ -9,6 +10,7 @@ const Projects = () => {
   const adminiadRef = useRef();  // Referencia para Adminiad
   const combustiblesRef = useRef();  // Referencia para Combustibles
   const cdaRef = useRef();
+  const puntosBe = useRef();
   
   // Referencias para los títulos y subtítulos
   const titleNumAdminiad = useRef();
@@ -22,6 +24,7 @@ const Projects = () => {
   const showAdminiad = useNearScreen(adminiadRef);  
   const showCombustibles = useNearScreen(combustiblesRef);
   const showCda = useNearScreen(cdaRef);
+  const showPuntosBe = useNearScreen(puntosBe);
   
   const showTitleNumAdminiad = useNearScreen(titleNumAdminiad);
   const showSubTitleAdminiad = useNearScreen(subTitleAdminiad);
@@ -88,6 +91,19 @@ const Projects = () => {
           </div>
           <div className={`container-img-project ${showCombustibles ? 'animate-fade-right' : ''}`} ref={combustiblesRef}>
             <img src={imgCombustibles} alt="Combustibles Argentinos" />
+          </div>
+        </div>
+
+        <div className="container-text-projects">
+          <div className={`container-img-project ${showPuntosBe ? 'animation-fade-left' : ''}`} ref={puntosBe}>
+            <img src={imgPuntosBe} alt="CDA" />
+          </div>
+          <div className="presentation-project" style={{width: '50%'}}>
+            <h2 className={`${showTitleNumCda ? 'animate-fade-up' : ''}`} style={{ fontSize: "60px", color: "#FF6B35", marginBottom: "5%", visibility: 'hidden' }} ref={titleNumCda}>04</h2>
+            <div className={`container-description-titles-project ${showSubTitleCda ? 'animate-fade-down' : ''}`} ref={subTitleCda}>
+            <h3 className="title-project">Puntos Be</h3>
+            <p className="description-project">Comunidad de ahorro y beneficios - Acumula puntos con cada compra en comercios participantes y canjéalos por descuentos en cualquier tienda de la red, sin importar la ubicación</p>
+            </div>
           </div>
         </div>
     

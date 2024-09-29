@@ -1,6 +1,14 @@
 .container-footer{
-    height: 250px;
     width: 100%;
-    background-color: #120D31;
-    
+    background-color: #dcdcdc;
+}
+.container-footer-2{
+    padding: 15px 0 5px;
+}
+.container-footer-2 div{
+    margin: 0 auto;
+    width: 80%;
+    color: #353740;
+    padding-bottom: 10px;
+    font-size: 14px;
 }
