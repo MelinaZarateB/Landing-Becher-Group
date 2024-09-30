@@ -20,11 +20,12 @@
 .h2-projects{
     font-size: 42px;
     font-weight: 600;
-    margin-bottom: 5%;
+    margin-bottom: 15px;
 }
 .h3-projects{
     line-height: 1.8em;
     font-weight: 500;
+    letter-spacing: 1px;
     font-size: 18px;
 }
 
