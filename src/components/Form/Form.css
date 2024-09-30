@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: auto;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -12,6 +12,8 @@
     align-items: center; 
     justify-content: center; 
     color: #dcdcdc;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .titles-form{
@@ -94,8 +96,8 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
-    float: right;
-    margin-top: 15px;
+    align-self: flex-end;
+    max-width: 100px;
 }
 .btn-submit:hover{
     border: 3px solid #FF6B35;
@@ -105,5 +107,15 @@
     .container-child-form{
         padding: 0 50px;
     }
+    .titles-form h2{
+        font-size: 25px;
+    }
+    .titles-form h3{
+        font-size: 17px;
+    }
+    .titles-form p{
+        font-size: 15px;
+    }
+
     
 }
