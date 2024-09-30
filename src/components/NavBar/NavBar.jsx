@@ -66,11 +66,11 @@ const NavBar = () => {
         </div>
         <div className={`container-links-navbar ${showNavMobile ? 'active' : ''}`}>
           <ul>
-            <li onClick={() => scrollTo("about")}>Sobre nosotros</li>
-            <li onClick={() => scrollTo("projects")}>Proyectos</li>
-            <li onClick={() => scrollTo("contact")}>Contactanos</li>
+            <li onClick={() => { scrollTo("about"); showNavBar(); }}>Sobre nosotros</li>
+            <li onClick={() => { scrollTo("projects"); showNavBar(); }}>Proyectos</li>
+            <li onClick={() => { scrollTo("contact"); showNavBar(); }}>Contactanos</li>
           </ul>
-        </div>
+        </div> 
       </div>
       </div>
     </section>
