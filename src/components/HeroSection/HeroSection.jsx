@@ -3,7 +3,7 @@ import image from "./../../assets/undraw_progressive_app_m-9-ms.svg";
 
 const HeroSection = () => {
   return (
-    <section className="container-hero">
+    <section className="container-hero" id="hero">
     <div className="hero-principal">
         <div className="container-image animate">  {/* Aplica fadeIn */}
             <img src={image} alt="" />
@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <span className="span-hero-section ">Becher Group</span> 
               </div>
                 <h1 className="fadeLeft">Innovación y Diversidad Empresarial</h1>
-                <p className="fadeLeft">
+                <p className="fadeLeft p-hero-section">
                 Christian y Matias Becher, hermanos fundadores, lideran un grupo empresarial que abarca múltiples sectores. 
                 <br />
                 Explora nuestras áreas de negocio y descubre cómo integramos tecnología, eficiencia y calidad en todo lo que hacemos.

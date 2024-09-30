@@ -19,6 +19,8 @@ const Projects = () => {
   const subTitleCda = useRef();
   const titleNumCombustibles = useRef();
   const subTitleCombustibles = useRef();
+  const titlePuntosBe = useRef();
+  const subTitlePuntosBe = useRef();
   
   // Uso de NearScreen hook para detectar cuando se deben mostrar los elementos
   const showAdminiad = useNearScreen(adminiadRef);  
@@ -26,14 +28,14 @@ const Projects = () => {
   const showCda = useNearScreen(cdaRef);
   const showPuntosBe = useNearScreen(puntosBe);
   
-  const showTitleNumAdminiad = useNearScreen(titleNumAdminiad);
-  const showSubTitleAdminiad = useNearScreen(subTitleAdminiad);
-  
   const showTitleNumCda = useNearScreen(titleNumCda);
   const showSubTitleCda = useNearScreen(subTitleCda);
-  
+  const showTitleNumAdminiad = useNearScreen(titleNumAdminiad);
+  const showSubTitleAdminiad = useNearScreen(subTitleAdminiad);
   const showTitleNumCombustibles = useNearScreen(titleNumCombustibles);
   const showSubTitleCombustibles = useNearScreen(subTitleCombustibles);
+  const showTitlePuntosBe = useNearScreen(titlePuntosBe);
+  const showSubTitlePuntosBe = useNearScreen(subTitlePuntosBe);
   
   return (
     <section className="container-projects">
@@ -99,8 +101,8 @@ const Projects = () => {
             <img src={imgPuntosBe} alt="CDA" />
           </div>
           <div className="presentation-project" style={{width: '50%'}}>
-            <h2 className={`${showTitleNumCda ? 'animate-fade-up' : ''}`} style={{ fontSize: "60px", color: "#FF6B35", marginBottom: "5%", visibility: 'hidden' }} ref={titleNumCda}>04</h2>
-            <div className={`container-description-titles-project ${showSubTitleCda ? 'animate-fade-down' : ''}`} ref={subTitleCda}>
+            <h2 className={`${showTitlePuntosBe ? 'animate-fade-up' : ''}`} style={{ fontSize: "60px", color: "#FF6B35", marginBottom: "5%", visibility: 'hidden' }} ref={titlePuntosBe}>04</h2>
+            <div className={`container-description-titles-project ${showSubTitlePuntosBe ? 'animate-fade-down' : ''}`} ref={subTitlePuntosBe}>
             <h3 className="title-project">Puntos Be</h3>
             <p className="description-project">Comunidad de ahorro y beneficios - Acumula puntos con cada compra en comercios participantes y canjéalos por descuentos en cualquier tienda de la red, sin importar la ubicación</p>
             </div>

@@ -243,3 +243,14 @@
         transform: none;
     }
 }
+@media screen and (width < 980px) {
+    .container-projects{
+        padding: 0 50px;
+    }
+    .container-text-projects{
+        flex-direction: column;
+    }
+    .container-img-project{
+        max-width: 100%;
+    }
+}

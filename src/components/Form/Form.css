@@ -8,9 +8,9 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
-    flex-direction: column; /* Alinear el contenido en columna */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
     color: #dcdcdc;
 }
 
@@ -42,7 +42,7 @@
     letter-spacing: 1px;
 }
 .container-child-form{
-    /*padding: 0 2rem;*/
+    padding: 0 2rem;
     width: 100%;
     max-width: 800px; /* Asegura que el form no se salga de los límites */
     visibility: hidden;
@@ -100,4 +100,10 @@
 .btn-submit:hover{
     border: 3px solid #FF6B35;
     color: #FF6B35;
+}
+@media screen and (width < 950px) {
+    .container-child-form{
+        padding: 0 50px;
+    }
+    
 }
