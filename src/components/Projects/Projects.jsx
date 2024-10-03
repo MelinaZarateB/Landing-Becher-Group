@@ -238,12 +238,12 @@ const Projects = () => {
               Revoluciona la gestión de embotelladoras de agua, optimizando procesos y asegurando la trazabilidad con facilidad.
               </p>
               <a
-                href="https://www.instagram.com/combustibles_argentinos?igsh=MXY5N2RpM2JxdmU2Nw=="
+                href="https://aguasbe.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <button className="btn-project" style={{ float: "left" }}>
-                  Ver empresa
+                  Ver trabajo
                 </button>
               </a>
             </div>
