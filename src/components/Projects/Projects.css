@@ -34,14 +34,17 @@
     flex-direction: column;
     padding-top: 44px;
     padding-bottom: 44px;
+    width: 50%;
 }
 .container-text-projects{
     display: flex;
     gap: 50px
+
 }
 .container-img-project{
     max-width: 600px;
      visibility: hidden; /* El elemento no es visible, pero ocupa su espacio */
+     width: 50%;
 }
 .container-img-project img{
     width: 100%;
@@ -251,8 +254,11 @@
     .container-text-projects{
         flex-direction: column;
     }
+    .presentation-project{
+        width: 100%;
+    }
     .container-img-project{
-        max-width: 100%;
+        width: 100%;
     }
     .h2-projects{
         font-size: 25px;

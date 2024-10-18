@@ -157,7 +157,7 @@ const Projects = () => {
 
         {/* Combustibles Argentinos Project */}
         <div className="container-text-projects">
-          <div className="presentation-project" style={{width: '50%'}}>
+          <div className="presentation-project">
             <h2
               className={`${showTitleNumCombustibles ? "animate-fade-up" : ""}`}
               style={{
@@ -195,7 +195,7 @@ const Projects = () => {
             className={`container-img-project ${
               showCombustibles ? "animate-fade-right" : ""
             }`}
-            style={{width: '50%'}}
+          
             ref={combustiblesRef}
           >
             <img src={imgCombustibles} alt="Combustibles Argentinos" />
@@ -208,7 +208,7 @@ const Projects = () => {
             className={`container-img-project ${
               showAguasBe ? "animation-fade-left" : ""
             }`}
-            style={{width: '50%'}}
+        
             ref={aguasBe}
           >
             <img src={imgAguasBe} alt="Proyecto Aguas Be" />
@@ -252,7 +252,7 @@ const Projects = () => {
 
         {/* Puntos Be Project */}
         <div className="container-text-projects">
-          <div className="presentation-project" style={{ width: "50%" }}>
+          <div className="presentation-project">
             <h2
               className={`${showPuntosBe ? "animate-fade-up" : ""}`}
               style={{
@@ -281,7 +281,7 @@ const Projects = () => {
             className={`container-img-project ${
               showPuntosBe ? "animate-fade-right" : ""
             }`}
-            style={{width: '50%'}}
+           
             ref={puntosBe}
           >
             <img src={imgPuntosBe} alt="Combustibles Argentinos" />
