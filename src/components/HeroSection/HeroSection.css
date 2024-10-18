@@ -1,5 +1,5 @@
 .container-hero{
-    background-image: url('./ImgHeroLanding.svg');
+    background-image: url('/src/assets/ImgHeroLanding.svg');
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 10px;
