@@ -1,5 +1,5 @@
 .container-hero{
-    background-image: url('/src/assets/Fintech\ Landingpage\ Concept\ \(Community\).svg');
+    background-image: url('./ImgHeroLanding.svg');
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 10px;
